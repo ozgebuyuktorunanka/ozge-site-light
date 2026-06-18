@@ -1,0 +1,25 @@
+// Prisma schema — ozge-site API
+// The site content is served statically by the frontend (bilingual),
+// so the database now has a single job: store contact-form submissions.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  locale    String?  // which language the visitor used (tr / en)
+  ip        String?
+  userAgent String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}

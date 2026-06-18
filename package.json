@@ -1,0 +1,22 @@
+{
+  "name": "ozge-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal full-stack website for Özge Büyüktorun — React + Express + Prisma monorepo.",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c green,cyan \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev -w @ozge/api",
+    "dev:web": "npm run dev -w @ozge/web",
+    "build": "npm run build -w @ozge/api && npm run build -w @ozge/web",
+    "lint": "npm run lint -w @ozge/api && npm run lint -w @ozge/web",
+    "typecheck": "npm run typecheck -w @ozge/api && npm run typecheck -w @ozge/web",
+    "test": "npm run test -w @ozge/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

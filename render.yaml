@@ -1,0 +1,19 @@
+# Optional Render Blueprint. You can keep configuring the service from the
+# dashboard, or use this file via Render → New → Blueprint to get the exact
+# build/start commands without remembering them.
+services:
+  - type: web
+    name: ozge-api
+    runtime: node
+    plan: free
+    rootDir: apps/api
+    buildCommand: npm install --include=dev && npx prisma generate && npm run build
+    startCommand: npx prisma migrate deploy && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false   # set in the dashboard (your Neon connection string)
+      - key: CORS_ORIGIN
+        sync: false   # set to your Vercel URL, no trailing slash
