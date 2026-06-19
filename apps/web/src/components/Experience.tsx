@@ -19,11 +19,31 @@ export function Experience() {
               </div>
               <h3 className="job-role">{job.role}</h3>
               <p className="job-org">{job.org}</p>
+              {job.summary && <p className="job-summary">{job.summary}</p>}
               <ul className="job-bullets">
                 {job.bullets.map((b, j) => (
                   <li key={j}>{b}</li>
                 ))}
               </ul>
+              {job.groups?.map((group, g) => (
+                <div className="job-group" key={g}>
+                  <p className="job-group-label">{group.label}</p>
+                  <ul className="job-bullets job-bullets-alt">
+                    {group.items.map((item, k) => (
+                      <li key={k}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              {job.tags && job.tags.length > 0 && (
+                <ul className="job-tags">
+                  {job.tags.map((tag) => (
+                    <li className="job-tag" key={tag}>
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </article>
           ))}
         </div>

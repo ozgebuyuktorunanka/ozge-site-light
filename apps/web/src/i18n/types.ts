@@ -29,12 +29,29 @@ export interface SkillGroup {
   items: string[];
 }
 
+/** A labelled cluster of bullets inside a job (e.g. "AI-Powered Enhancements"). */
+export interface JobGroup {
+  label: string;
+  items: string[];
+}
+
 export interface Job {
   period: string;
   role: string;
   org: string;
   current?: boolean;
+  /** Optional one-line framing shown above the bullets. */
+  summary?: string;
   bullets: string[];
+  /** Optional labelled sub-clusters rendered after the main bullets. */
+  groups?: JobGroup[];
+  /** Optional tech-stack / keyword chips for the role. */
+  tags?: string[];
+}
+
+export interface Achievement {
+  title: string;
+  detail: string;
 }
 
 export interface Industry {
@@ -48,7 +65,7 @@ export interface NamedEntry {
 }
 
 export interface UIStrings {
-  nav: { about: string; impact: string; skills: string; work: string; contact: string };
+  nav: { about: string; impact: string; skills: string; work: string; achievements: string; contact: string };
   sections: {
     aboutEyebrow: string;
     aboutTitle: string;
@@ -58,6 +75,10 @@ export interface UIStrings {
     skillsTitle: string;
     workEyebrow: string;
     workTitle: string;
+    achievementsEyebrow: string;
+    achievementsTitle: string;
+    achievementsLabel: string;
+    competenciesLabel: string;
     industriesEyebrow: string;
     industriesTitle: string;
     educationEyebrow: string;
@@ -94,6 +115,8 @@ export interface Dict {
   metrics: Metric[];
   skillGroups: SkillGroup[];
   experience: Job[];
+  achievements: Achievement[];
+  competencies: string[];
   industries: Industry[];
   education: NamedEntry[];
   certifications: NamedEntry[];

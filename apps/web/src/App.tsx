@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { Metrics } from './components/Metrics';
 import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
+import { Achievements } from './components/Achievements';
 import { Industries } from './components/Industries';
 import { Education } from './components/Education';
 import { Contact } from './components/Contact';
@@ -22,6 +23,7 @@ export default function App() {
         <Metrics />
         <Skills />
         <Experience />
+        <Achievements />
         <Industries />
         <Education />
         <Contact />

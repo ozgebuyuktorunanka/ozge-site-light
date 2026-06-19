@@ -16,6 +16,7 @@ export function TopBar() {
           <a href="#impact">{nav.impact}</a>
           <a href="#skills">{nav.skills}</a>
           <a href="#work">{nav.work}</a>
+          <a href="#achievements">{nav.achievements}</a>
           <a href="#contact">{nav.contact}</a>
         </nav>
 

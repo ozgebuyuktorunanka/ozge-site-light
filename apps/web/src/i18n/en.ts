@@ -35,11 +35,12 @@ export const en: Dict = {
   ],
 
   skillGroups: [
-    { heading: 'Test Automation', items: ['Playwright', 'TypeScript', 'Cypress', 'Selenium WebDriver', 'Cucumber / BDD', 'PyTest', 'Robot Framework', 'Selenium Grid'] },
-    { heading: 'API & Performance', items: ['REST', 'GraphQL', 'WebSocket', 'Postman', 'JMeter', 'Grafana K6', 'RestAssured', 'SoapUI'] },
-    { heading: 'AI-Assisted Quality', items: ['GitHub Copilot', 'Claude', 'MCP Agents', 'Self-Healing Tests', 'Visual AI (Applitools)', 'Prompt Engineering', 'Synthetic Data'] },
-    { heading: 'Backend & Data', items: ['Node.js', 'NestJS', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'OracleDB', 'Apache Kafka'] },
-    { heading: 'DevOps & Cloud', items: ['Jenkins', 'GitLab CI', 'Azure DevOps', 'Bitbucket', 'Docker', 'Kubernetes', 'AWS'] },
+    { heading: 'Test Automation', items: ['Playwright (Advanced)', 'Cypress (Intermediate)', 'Selenium WebDriver', 'Selenium Grid', 'Cucumber / Gherkin', 'PyTest', 'Robot Framework', 'QT Framework', 'Tkinter'] },
+    { heading: 'API & Performance', items: ['RESTful API', 'GraphQL', 'WebSocket', 'Postman', 'SoapUI', 'JMeter', 'Grafana K6', 'RestAssured', 'Mockoon'] },
+    { heading: 'AI-Assisted Quality', items: ['GitHub Copilot', 'Claude AI', 'ChatGPT', 'MCP Agents', 'Self-Healing Tests', 'Visual AI (Applitools)', 'Predictive Test Analytics', 'Prompt Engineering', 'Synthetic Data'] },
+    { heading: 'Test Management & Methods', items: ['Jira', 'X-RAY', 'Confluence', 'BDD', 'Gherkin', 'Shift-Left Testing', 'UAT', 'Regression', 'Smoke', 'E2E', 'Load & Stress'] },
+    { heading: 'Backend & Data', items: ['JavaScript (Advanced)', 'TypeScript', 'Node.js', 'Python', 'Java', 'NestJS', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'OracleDB', 'Apache Kafka'] },
+    { heading: 'DevOps & Cloud', items: ['Jenkins', 'GitLab CI', 'Bitbucket Pipelines', 'Azure DevOps', 'Git', 'SVN', 'Docker', 'Kubernetes', 'AWS (CloudWatch, DynamoDB, IoT Core, S3, Cognito)'] },
   ],
 
   experience: [
@@ -48,14 +49,16 @@ export const en: Dict = {
       role: 'Senior Quality Assurance Automation Engineer',
       org: 'Toptal · Remote — Germany-based clients · Ankara, Türkiye',
       current: true,
+      summary:
+        'Architecting and delivering end-to-end automation strategies for large-scale international software, collaborating remotely with Germany-based engineering teams.',
       bullets: [
-        'Collaborating remotely with Germany-based engineering teams to architect and deliver end-to-end automation strategies for large-scale software solutions.',
         'On a sensor- and hardware-driven product, owning the web and mobile automation, API tests, and the planning, building and maintenance of the regression and smoke suites.',
         'Working with MCP (Model Context Protocol) systems to run automated tests and testing agents, and to integrate automation agents and test processes into CI pipelines.',
         'Developing scalable test frameworks using Playwright and TypeScript for high-performance web applications.',
         'Providing technical consultancy on CI/CD integration and shift-left testing approaches.',
         'Spearheading the integration of AI-assisted testing tools to automate routine maintenance and enhance test coverage through intelligent synthetic data generation.',
       ],
+      tags: ['Playwright', 'TypeScript', 'MCP', 'Web & Mobile', 'API', 'CI/CD', 'Shift-Left'],
     },
     {
       period: 'June 2025 — August 2025 (3 months)',
@@ -67,54 +70,76 @@ export const en: Dict = {
         'Executed performance and load tests using JMeter; performed API integration tests using Postman.',
         'Managed and documented test processes using Jira and Confluence.',
         'Planned tests based on risk analysis and defect prioritization.',
-        'AI-Powered Enhancements: Accelerated test scenario generation using GitHub Copilot and Claude AI, reducing repetitive script development time by ~40%.',
-        'AI-Powered Enhancements: Used LLM-based prompt engineering to automatically generate test datasets and edge-case scenarios.',
-        'AI-Powered Enhancements: Applied AI-powered log analysis to reduce false-positive rates in regression testing.',
       ],
+      groups: [
+        {
+          label: 'AI-Powered Enhancements',
+          items: [
+            'Accelerated test scenario generation using GitHub Copilot and Claude AI, reducing repetitive script development time by ~40%.',
+            'Used LLM-based prompt engineering to automatically generate test datasets and edge-case scenarios.',
+            'Applied AI-powered log analysis to reduce false-positive rates in regression testing.',
+          ],
+        },
+      ],
+      tags: ['Selenium', 'Java', 'BDD / Gherkin', 'JMeter', 'Postman', 'Jira', 'Confluence'],
     },
     {
       period: 'October 2023 — March 2025 (1 year 6 months)',
       role: 'Senior Quality Assurance Automation Engineer',
       org: 'CyanGate · OneTeg Project (DAM & PIM Integrations) · Ankara · Hybrid',
-      bullets: [
+      summary:
         'Contributed to the OneTeg Project as a QA engineer focused on web UI automation and API testing.',
+      bullets: [
         'Analyzed requirements, designed and executed test cases, and managed defect reporting and regression testing.',
         'Developed and maintained automated test coverage using Playwright (Node.js / JavaScript); architected the test automation repository from scratch covering Smoke, Regression and E2E test suites, raising coverage from 40% to 85%.',
         'Conducted root cause analysis on Nightly Build reports for early bug detection; integrated HTML and Allure Reporting for comprehensive test visualization.',
         'Optimized execution speed through parallel execution and scalable test architecture.',
         'Designed CI/CD-integrated test automation frameworks (Jenkins, Bitbucket); configured mock API environments using Mockoon.',
         'Led POC initiatives for new technology integration; prepared traceability matrices and test documentation.',
-        'AI-Powered Enhancements: Rapidly scaffolded Playwright test scenarios using AI-assisted tools (Copilot, Claude), significantly reducing automation development time.',
-        'AI-Powered Enhancements: Integrated visual regression testing to automatically detect UI changes and minimize false-positive rates.',
-        'AI-Powered Enhancements: Researched and implemented self-healing test locator strategies for automatic recovery on dynamic web elements.',
-        'AI-Powered Enhancements: Worked on AI-driven synthetic test data generation and predictive test selection strategies.',
-        'AI-Powered Enhancements: Accelerated bug report categorization and root cause analysis using LLM-based defect analysis.',
       ],
+      groups: [
+        {
+          label: 'AI-Powered Enhancements',
+          items: [
+            'Rapidly scaffolded Playwright test scenarios using AI-assisted tools (Copilot, Claude), significantly reducing automation development time.',
+            'Integrated visual regression testing to automatically detect UI changes and minimize false-positive rates.',
+            'Researched and implemented self-healing test locator strategies for automatic recovery on dynamic web elements.',
+            'Worked on AI-driven synthetic test data generation and predictive test selection strategies.',
+            'Accelerated bug report categorization and root cause analysis using LLM-based defect analysis.',
+          ],
+        },
+      ],
+      tags: ['Playwright', 'Node.js', 'JavaScript', 'Jenkins', 'Bitbucket', 'Allure', 'Mockoon'],
     },
     {
       period: 'April 2023 — August 2023 (5 months)',
       role: 'Quality Assurance Automation Engineer',
       org: 'Meva Avionics · Baykar Technology · Ankara · On-site',
+      summary:
+        "Part of the first team established at Baykar's startup; built the test architecture from scratch for UAV cockpit embedded software.",
       bullets: [
-        "Part of the first team established at Baykar's startup; designed automation tests for geographic positioning in UAV cockpit embedded software and built the test architecture from scratch.",
+        'Designed automation tests for geographic positioning in UAV cockpit embedded software.',
         'Built test automation infrastructure using Python with QT and Tkinter frameworks.',
         'Actively used USB, Ethernet, RS232/422/485 and CAN communication protocols.',
         'Hands-on experience with STM32 (ARM Cortex-M) and TI AM6442 (Sitara) architectures; performed end-to-end system testing with UART, SPI and I2C data integrity analysis.',
         'Integrated test automation into GitLab CI/CD pipelines; managed version control with SVN and Git.',
       ],
+      tags: ['Python', 'QT', 'Tkinter', 'CAN', 'RS232/422/485', 'STM32', 'TI AM6442', 'GitLab CI'],
     },
     {
       period: 'February 2022 — January 2023 (1 year)',
       role: 'Quality Assurance Automation Engineer',
       org: 'Lotec Company · Ankara · On-site',
-      bullets: [
+      summary:
         'Projects: Home Farming Applications (Mobile), Remote-Controlled Street Lighting (DALI, IoT, Web), Braue Kajer Sensor Data Project (Web), Certified Student Exam System (Web).',
+      bullets: [
         'Completed E2E, regression and smoke test automation with Selenium WebDriver (Python).',
         'Designed and implemented performance and load tests using Apache JMeter for 500,000 concurrent users.',
         'Performed REST API, GraphQL and WebSocket API tests; built API automation using Postman, RestAssured and Grafana K6.',
         'Extensively used AWS microservice architecture (CloudWatch, DynamoDB, IoT Core, S3).',
         'Wrote test scenarios using Gherkin syntax with a BDD approach.',
       ],
+      tags: ['Selenium', 'Python', 'JMeter', 'REST', 'GraphQL', 'WebSocket', 'AWS', 'Grafana K6'],
     },
     {
       period: 'February 2020 — January 2022 (2 years)',
@@ -126,6 +151,7 @@ export const en: Dict = {
         'Managed MDR technical file creation, risk analysis, clinical research and literature reviews.',
         'Managed medical device documentation and licensing on the Ministry of Health UTS System.',
       ],
+      tags: ['ISO 13485', 'MDR/745', 'ISO 9001', 'ISO 14001', 'Risk Analysis', 'UTS'],
     },
     {
       period: 'January 2018 — February 2020 (2 years 2 months)',
@@ -144,6 +170,7 @@ export const en: Dict = {
         'Managed risk assessment and technical documentation in accordance with ISO 14971.',
         'Developed test procedures for medical devices and created comprehensive test reports (TRF).',
       ],
+      tags: ['IEC 60601-1', 'EN 61010-1', 'ISO 14971', 'LVD', 'TRF'],
     },
     {
       period: 'August 2014 — August 2015 (1 year 1 month)',
@@ -152,7 +179,25 @@ export const en: Dict = {
       bullets: [
         'Responsible for all processes including sales, tenders, demos and quality documentation for anesthesia and ICU product groups.',
       ],
+      tags: ['Anesthesia', 'ICU Devices', 'Tenders', 'Product Demos'],
     },
+  ],
+
+  achievements: [
+    { title: 'Test Automation Transformation', detail: 'Increased test coverage from 40% to 85% at CyanGate, reducing critical defects by 60%.' },
+    { title: 'CI/CD Integration', detail: 'Integrated E2E, Smoke and Regression tests into Jenkins pipelines, accelerating bug-detection cycles.' },
+    { title: 'API Test Framework', detail: 'Built a dynamic Mock API environment with Mockoon, doubling development speed.' },
+    { title: 'International Collaboration', detail: 'Leading large-scale end-to-end automation remotely with Germany-based teams via Toptal.' },
+    { title: 'Cross-functional Bridge', detail: 'Connected embedded and software teams at Baykar, optimizing test processes across disciplines.' },
+  ],
+
+  competencies: [
+    'Strong analytical thinking and problem-solving',
+    'Effective communication and cross-functional collaboration',
+    'Leadership in managing QA teams and mentoring junior engineers',
+    'Adaptability and rapid learning in fast-changing environments',
+    'Proactive approach to process improvement and innovation',
+    'High attention to detail and commitment to quality',
   ],
 
   industries: [
@@ -177,7 +222,7 @@ export const en: Dict = {
   ],
 
   ui: {
-    nav: { about: 'About', impact: 'Impact', skills: 'Skills', work: 'Experience', contact: 'Contact' },
+    nav: { about: 'About', impact: 'Impact', skills: 'Skills', work: 'Experience', achievements: 'Highlights', contact: 'Contact' },
     sections: {
       aboutEyebrow: 'About',
       aboutTitle: 'How I think about quality',
@@ -187,6 +232,10 @@ export const en: Dict = {
       skillsTitle: 'What I work with',
       workEyebrow: 'Experience',
       workTitle: 'Where I’ve done it',
+      achievementsEyebrow: 'Highlights',
+      achievementsTitle: 'Achievements & strengths',
+      achievementsLabel: 'Key achievements',
+      competenciesLabel: 'Core competencies',
       industriesEyebrow: 'Domains',
       industriesTitle: 'Tested across industries',
       educationEyebrow: 'Foundations',

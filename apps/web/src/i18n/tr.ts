@@ -35,11 +35,12 @@ export const tr: Dict = {
   ],
 
   skillGroups: [
-    { heading: 'Test Otomasyonu', items: ['Playwright', 'TypeScript', 'Cypress', 'Selenium WebDriver', 'Cucumber / BDD', 'PyTest', 'Robot Framework', 'Selenium Grid'] },
-    { heading: 'API & Performans', items: ['REST', 'GraphQL', 'WebSocket', 'Postman', 'JMeter', 'Grafana K6', 'RestAssured', 'SoapUI'] },
-    { heading: 'AI Destekli Kalite', items: ['GitHub Copilot', 'Claude', 'MCP Ajanları', 'Self-Healing Testler', 'Visual AI (Applitools)', 'Prompt Mühendisliği', 'Sentetik Veri'] },
-    { heading: 'Backend & Veri', items: ['Node.js', 'NestJS', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'OracleDB', 'Apache Kafka'] },
-    { heading: 'DevOps & Bulut', items: ['Jenkins', 'GitLab CI', 'Azure DevOps', 'Bitbucket', 'Docker', 'Kubernetes', 'AWS'] },
+    { heading: 'Test Otomasyonu', items: ['Playwright (İleri)', 'Cypress (Orta)', 'Selenium WebDriver', 'Selenium Grid', 'Cucumber / Gherkin', 'PyTest', 'Robot Framework', 'QT Framework', 'Tkinter'] },
+    { heading: 'API & Performans', items: ['RESTful API', 'GraphQL', 'WebSocket', 'Postman', 'SoapUI', 'JMeter', 'Grafana K6', 'RestAssured', 'Mockoon'] },
+    { heading: 'AI Destekli Kalite', items: ['GitHub Copilot', 'Claude AI', 'ChatGPT', 'MCP Ajanları', 'Self-Healing Testler', 'Visual AI (Applitools)', 'Predictive Test Analytics', 'Prompt Mühendisliği', 'Sentetik Veri'] },
+    { heading: 'Test Yönetimi & Yöntemler', items: ['Jira', 'X-RAY', 'Confluence', 'BDD', 'Gherkin', 'Shift-Left Testing', 'UAT', 'Regresyon', 'Smoke', 'E2E', 'Load & Stress'] },
+    { heading: 'Backend & Veri', items: ['JavaScript (İleri)', 'TypeScript', 'Node.js', 'Python', 'Java', 'NestJS', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'OracleDB', 'Apache Kafka'] },
+    { heading: 'DevOps & Bulut', items: ['Jenkins', 'GitLab CI', 'Bitbucket Pipelines', 'Azure DevOps', 'Git', 'SVN', 'Docker', 'Kubernetes', 'AWS (CloudWatch, DynamoDB, IoT Core, S3, Cognito)'] },
   ],
 
   experience: [
@@ -48,14 +49,16 @@ export const tr: Dict = {
       role: 'Kıdemli Kalite Güvence Otomasyon Mühendisi',
       org: 'Toptal · Almanya merkezli müşterilerle uzaktan · Ankara, Türkiye',
       current: true,
+      summary:
+        'Almanya merkezli mühendislik ekipleriyle uzaktan işbirliği yaparak büyük ölçekli uluslararası yazılımlar için uçtan uca otomasyon stratejilerini mimarlandırıyor ve hayata geçiriyorum.',
       bullets: [
-        'Almanya merkezli mühendislik ekipleriyle uzaktan işbirliği yaparak büyük ölçekli yazılım projeleri için uçtan uca otomasyon stratejilerini mimarlandırma ve hayata geçirme.',
         'Sensör ve donanım tabanlı bir projede web ve mobil kısımda otomasyon, API testleri, regresyon ve smoke testlerinin planlanması, hazırlanması ve sürdürülmesi.',
         'MCP (Model Context Protocol) tabanlı sistemlerde otomatik testlerin ve test ajanlarının koşulması; otomasyon ajanlarının ve test süreçlerinin CI entegrasyonu.',
         'Yüksek performanslı web uygulamaları için Playwright ve TypeScript kullanarak ölçeklenebilir test framework’leri geliştirme.',
         'CI/CD entegrasyonu ve shift-left testing yaklaşımları konusunda teknik danışmanlık sağlama.',
         'Rutin bakımı otomatize etmek ve akıllı sentetik veri üretimi ile test kapsamını genişletmek için AI destekli test araçlarının entegrasyonuna öncülük etme.',
       ],
+      tags: ['Playwright', 'TypeScript', 'MCP', 'Web & Mobil', 'API', 'CI/CD', 'Shift-Left'],
     },
     {
       period: 'Haziran 2025 — Ağustos 2025 (3 ay)',
@@ -67,54 +70,75 @@ export const tr: Dict = {
         'JMeter ile performans ve yük testleri yürütme; Postman ile API entegrasyon testleri.',
         'Jira ve Confluence araçlarıyla test süreçlerini yönetme ve dokümante etme.',
         'Risk analizi ve hata önceliklerine göre test planlaması yapma.',
-        'AI Destekli İyileştirmeler: GitHub Copilot ve Claude AI kullanarak tekrarlayan test script geliştirme süresini ~%40 kısaltma.',
-        'AI Destekli İyileştirmeler: LLM tabanlı prompt mühendisliği ile test veri setleri ve edge-case senaryolarını otomatik üretme.',
-        'AI Destekli İyileştirmeler: AI-powered log analizi ile regresyon testlerindeki false-positive oranlarını azaltma.',
       ],
+      groups: [
+        {
+          label: 'AI Destekli İyileştirmeler',
+          items: [
+            'GitHub Copilot ve Claude AI kullanarak tekrarlayan test script geliştirme süresini ~%40 kısaltma.',
+            'LLM tabanlı prompt mühendisliği ile test veri setleri ve edge-case senaryolarını otomatik üretme.',
+            'AI-powered log analizi ile regresyon testlerindeki false-positive oranlarını azaltma.',
+          ],
+        },
+      ],
+      tags: ['Selenium', 'Java', 'BDD / Gherkin', 'JMeter', 'Postman', 'Jira', 'Confluence'],
     },
     {
       period: 'Ekim 2023 — Mart 2025 (1 yıl 6 ay)',
       role: 'Kıdemli Kalite Güvence Otomasyon Mühendisi',
       org: 'CyanGate · OneTeg Projesi (DAM & PIM Entegrasyonları) · Ankara · Hibrit',
-      bullets: [
+      summary:
         'OneTeg Projesi’ne, web kullanıcı arayüzü otomasyonu ve API testlerine odaklanan bir Kalite Güvence Mühendisi olarak katkıda bulundum.',
+      bullets: [
         'Gereksinim analizi, test senaryosu tasarımı, test yürütme, hata raporlama ve regresyon testleri.',
         'Playwright (Node.js / JavaScript) ile sıfırdan test otomasyon projesi kurgulanması; Smoke, Regression ve E2E senaryolarının yapılandırılması ve test kapsamının %40’tan %85’e çıkarılması.',
         'Nightly Build süreçlerini takiben rapor analizleri ve erken hata tespiti; HTML ve Allure Report entegrasyonu ile raporlama altyapısı.',
         'Paralel koşum (parallel execution) ve ölçeklenebilir mimari ile test hızı ve verimliliğini optimize etme.',
         'CI/CD süreçlerine entegre test otomasyon framework’leri tasarlama (Jenkins, Bitbucket); Mockoon ile dinamik Mock API ortamları yapılandırma.',
         'Yeni teknoloji entegrasyonu için POC çalışmaları yürütme; izlenebilirlik matrisleri ve test dokümantasyonu hazırlama.',
-        'AI Destekli İyileştirmeler: AI destekli araçlarla (Copilot, Claude) Playwright test senaryolarını hızlı scaffold ederek otomasyon geliştirme süresini önemli ölçüde kısaltma.',
-        'AI Destekli İyileştirmeler: Visual Regression Testing entegre ederek UI değişikliklerini otomatik tespit etme ve false-positive oranlarını minimize etme.',
-        'AI Destekli İyileştirmeler: Self-healing test locator stratejileri ile dinamik web elementlerinde kırılan testlerin otomatik kurtarma mekanizmalarını araştırma.',
-        'AI Destekli İyileştirmeler: AI tabanlı sentetik test verisi üretimi ve predictive test selection stratejileri üzerinde çalışma.',
-        'AI Destekli İyileştirmeler: LLM tabanlı hata analizi ile bug raporlarının otomatik kategorizasyonu ve kök neden analizini hızlandırma.',
       ],
+      groups: [
+        {
+          label: 'AI Destekli İyileştirmeler',
+          items: [
+            'AI destekli araçlarla (Copilot, Claude) Playwright test senaryolarını hızlı scaffold ederek otomasyon geliştirme süresini önemli ölçüde kısaltma.',
+            'Visual Regression Testing entegre ederek UI değişikliklerini otomatik tespit etme ve false-positive oranlarını minimize etme.',
+            'Self-healing test locator stratejileri ile dinamik web elementlerinde kırılan testlerin otomatik kurtarma mekanizmalarını araştırma.',
+            'AI tabanlı sentetik test verisi üretimi ve predictive test selection stratejileri üzerinde çalışma.',
+            'LLM tabanlı hata analizi ile bug raporlarının otomatik kategorizasyonu ve kök neden analizini hızlandırma.',
+          ],
+        },
+      ],
+      tags: ['Playwright', 'Node.js', 'JavaScript', 'Jenkins', 'Bitbucket', 'Allure', 'Mockoon'],
     },
     {
       period: 'Nisan 2023 — Ağustos 2023 (5 ay)',
       role: 'Kalite Güvence Otomasyon Mühendisi',
       org: 'Meva Avionic · Baykar Teknoloji · Ankara · Ofiste',
+      summary:
+        'Savunma sanayii öncülerinden Baykar’ın start-up firmasında ilk kurulan ekipte yer aldım; İHA kokpit gömülü yazılımı için test mimarisini sıfırdan kurdum.',
       bullets: [
-        'Savunma sanayii öncülerinden Baykar’ın start-up firmasında ilk kurulan ekipte yer alma.',
-        'İHA kokpit ekranlarındaki gömülü yazılımlar için coğrafi konum otomasyon testleri tasarlama; sıfırdan test mimarisini oluşturma.',
+        'İHA kokpit ekranlarındaki gömülü yazılımlar için coğrafi konum otomasyon testleri tasarlama.',
         'Python / QT / Tkinter ile test otomasyon altyapısını kurma; USB, Ethernet, RS232/422/485 ve CAN protokollerinin aktif kullanımı.',
         'STM32 (ARM Cortex-M) ve AM6442 (Sitara) işlemcili donanımlar üzerinde UART, SPI, I2C protokolleriyle uçtan uca sistem testleri ve veri bütünlüğü analizi.',
         'GitLab CI/CD pipeline entegrasyonu; SVN ve Git ile versiyon kontrol yönetimi.',
       ],
+      tags: ['Python', 'QT', 'Tkinter', 'CAN', 'RS232/422/485', 'STM32', 'TI AM6442', 'GitLab CI'],
     },
     {
       period: 'Şubat 2022 — Ocak 2023 (1 yıl)',
       role: 'Kalite Güvence Otomasyon Mühendisi',
       org: 'Lotec Company · Ankara · Ofiste',
-      bullets: [
+      summary:
         'Projeler: Ev Tarımı Uygulamaları (Mobil), Uzaktan Kumandalı Sokak Aydınlatması (DALI, IoT, Web), Braue Kajer Sensör Verileri Projesi (Web), Sertifikalı Öğrenci Sınav Sistemi (Web).',
+      bullets: [
         'Selenium WebDriver (Python) ile E2E, Regresyon ve Smoke testlerinin otomasyonu.',
         'Apache JMeter ile anlık 500.000 kullanıcı için performans ve yük testleri tasarlama.',
         'REST API, GraphQL ve WebSocket API testleri; Postman, RestAssured ve Grafana K6 ile API otomasyonu.',
         'AWS Microservice mimarisinde CloudWatch, DynamoDB, IoT Core, S3 servislerini aktif kullanma.',
         'BDD yaklaşımıyla Gherkin syntax kullanarak test senaryoları yazma.',
       ],
+      tags: ['Selenium', 'Python', 'JMeter', 'REST', 'GraphQL', 'WebSocket', 'AWS', 'Grafana K6'],
     },
     {
       period: 'Şubat 2020 — Ocak 2022 (2 yıl)',
@@ -126,6 +150,7 @@ export const tr: Dict = {
         'MDR teknik tıbbi cihaz dosya oluşturma, Risk Analizi, Klinik Araştırma ve literatür inceleme süreçlerini yönetme.',
         'Sağlık Bakanlığı ÜTS sistemine tıbbi cihaz dokümantasyonu ve ruhsatlandırma süreçleri.',
       ],
+      tags: ['ISO 13485', 'MDR/745', 'ISO 9001', 'ISO 14001', 'Risk Analizi', 'ÜTS'],
     },
     {
       period: 'Ocak 2018 — Şubat 2020 (2 yıl 2 ay)',
@@ -144,6 +169,7 @@ export const tr: Dict = {
         'ISO 14971 doğrultusunda risk değerlendirmesi ve teknik dokümantasyon yönetimi.',
         'Medikal cihazlar için test prosedürleri geliştirme ve kapsamlı test raporları (TRF) hazırlama.',
       ],
+      tags: ['IEC 60601-1', 'EN 61010-1', 'ISO 14971', 'LVD', 'TRF'],
     },
     {
       period: 'Ağustos 2014 — Ağustos 2015 (1 yıl 1 ay)',
@@ -152,7 +178,25 @@ export const tr: Dict = {
       bullets: [
         'Anestezi ve yoğun bakım ünitelerine hitap eden ürün gruplarında satış, ihale, demo ve kalite dokümanları süreçleri.',
       ],
+      tags: ['Anestezi', 'Yoğun Bakım', 'İhale', 'Ürün Demo'],
     },
+  ],
+
+  achievements: [
+    { title: 'Test Otomasyonu Dönüşümü', detail: 'CyanGate’de test kapsama oranını %40’tan %85’e çıkararak kritik hataları %60 azalttım.' },
+    { title: 'CI/CD Entegrasyonu', detail: 'E2E, Smoke ve Regression testlerini Jenkins pipeline’larına entegre ederek bug bulma sürecini hızlandırdım.' },
+    { title: 'API Test Framework’ü', detail: 'Mockoon ile dinamik Mock API ortamı kurarak geliştirme hızını iki katına çıkardım.' },
+    { title: 'Uluslararası İşbirliği', detail: 'Toptal üzerinden Almanya merkezli ekiplerle uzaktan büyük ölçekli uçtan uca otomasyon liderliği.' },
+    { title: 'Cross-functional Köprü', detail: 'Baykar’da gömülü ve yazılım ekipleri arasında köprü kurarak disiplinler arası test süreçlerini optimize ettim.' },
+  ],
+
+  competencies: [
+    'Güçlü analitik düşünme ve problem çözme',
+    'Etkili iletişim ve departmanlar arası işbirliği',
+    'QA ekiplerini yönetme ve genç mühendislere mentorluk',
+    'Hızlı değişen ortamlarda adaptasyon ve hızlı öğrenme',
+    'Süreç iyileştirme ve yenilikçilikte proaktif yaklaşım',
+    'Detaylara yüksek dikkat ve kaliteye bağlılık',
   ],
 
   industries: [
@@ -175,7 +219,7 @@ export const tr: Dict = {
   ],
 
   ui: {
-    nav: { about: 'Hakkımda', impact: 'Etki', skills: 'Yetenekler', work: 'Deneyim', contact: 'İletişim' },
+    nav: { about: 'Hakkımda', impact: 'Etki', skills: 'Yetenekler', work: 'Deneyim', achievements: 'Öne Çıkanlar', contact: 'İletişim' },
     sections: {
       aboutEyebrow: 'Hakkımda',
       aboutTitle: 'Kaliteye bakışım',
@@ -185,6 +229,10 @@ export const tr: Dict = {
       skillsTitle: 'Çalıştığım teknolojiler',
       workEyebrow: 'Deneyim',
       workTitle: 'Bunu nerede yaptım',
+      achievementsEyebrow: 'Öne Çıkanlar',
+      achievementsTitle: 'Başarılar & güçlü yönler',
+      achievementsLabel: 'Başarı hikâyeleri',
+      competenciesLabel: 'Temel yetkinlikler',
       industriesEyebrow: 'Alanlar',
       industriesTitle: 'Sektörler arası test',
       educationEyebrow: 'Temeller',
