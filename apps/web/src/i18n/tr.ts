@@ -3,11 +3,11 @@ import type { Dict } from './types';
 export const tr: Dict = {
   profile: {
     name: 'Özge Büyüktorun',
-    role: 'Kıdemli QA & Test Otomasyon Mühendisi — SDET',
+    role: 'Kıdemli Kalite Güvence & Test Otomasyon Mühendisi — SDET',
     location: 'Ankara, Türkiye · Uzaktan',
     email: 'ozgebuyuktorun@outlook.com',
     linkedin: 'https://linkedin.com/in/ozgebuyuktorun1',
-    heroLine: 'Kaliteyi ölçülebilir — ve güvenilir — kılıyorum.',
+    heroLine: 'Analitik düşünme stratejimle kaliteyi ölçülebilir ve güvenilir kılıyorum.s',
     heroSub:
       'Yaklaşık on yıldır, ekiplerin çalışan şeyi bozmadan hızlı ilerlemesini sağlayan otomasyonu kuruyorum. Bugün bunu Toptal üzerinden Almanya merkezli ekipler için uzaktan yapıyorum.',
     availability: 'Kıdemli SDET & QA-mimarisi rollerine açığım',
@@ -20,17 +20,17 @@ export const tr: Dict = {
       'Son dönemde odağım AI destekli test: senaryo üretmek, kırılgan locator’ları kendi kendine onarmak ve hataları analiz etmek için LLM’ler ve MCP tabanlı ajanlar kullanıyorum — böylece suit hızlanıyor, insanlar zor vakalara odaklanıyor.',
     ],
     facts: [
-      { label: 'Deneyim', value: '~10 yıl mühendislik · 6+ yıl QA' },
+      { label: 'Deneyim', value: '~13 yıl mühendislik · 7+ yıl QA' },
       { label: 'Konum', value: 'Ankara, Türkiye · Uzaktan' },
-      { label: 'Odak', value: 'Playwright · TypeScript · CI/CD' },
-      { label: 'Diller', value: 'Türkçe (ana dil) · İngilizce (B2–C1)' },
+      { label: 'Focus', value: 'Playwright · TypeScript · CI/CD · Selenium ·Apache Jmeter ·Postman ·Graphana K6 ·AWS Microservices ·Confluence ·Jira ·Bitbucket ·VS Code ·LoadRunner ·RestAssured ·Cypress ·Katalon Studio' },
+      { label: 'Diller', value: 'Türkçe (Ana Dil) · İngilizce (B2–C1) · German (A2–B1)' },
     ],
   },
 
   metrics: [
     { value: '%40 → %85', context: 'CyanGate’de sıfırdan yeniden kurduğum test kapsamı.' },
     { value: '−%60', context: 'Otomasyonla daha erken yakalanan kritik hatalar.' },
-    { value: '500K', context: 'Lotec’te JMeter ile yük testi yaptığım eşzamanlı kullanıcı.' },
+    { value: '500K', context: 'Lotec’te JMeter ile yük testi yaptığım eşzamanlı kullanıcı testleri.' },
     { value: '~%40', context: 'AI destekli üretimle tekrarlayan script’lere harcanan sürede azalma.' },
   ],
 

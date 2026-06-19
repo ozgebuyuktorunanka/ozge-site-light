@@ -3,11 +3,11 @@ import type { Dict } from './types';
 export const en: Dict = {
   profile: {
     name: 'Özge Büyüktorun',
-    role: 'Senior QA & Test Automation Engineer — SDET',
+    role: 'Senior Quality Assurance & Test Automation Engineer — SDET',
     location: 'Ankara, Türkiye · Remote',
     email: 'ozgebuyuktorun@outlook.com',
     linkedin: 'https://linkedin.com/in/ozgebuyuktorun1',
-    heroLine: 'I make quality something you can measure — and trust.',
+    heroLine: 'My analitical thinking strategy makes quality measurable and reliable.s',
     heroSub:
       'For nearly ten years I’ve built the automation that lets engineering teams move fast without breaking what already works. Today I do that remotely for Germany-based teams through Toptal.',
     availability: 'Open to senior SDET & QA-architecture roles',
@@ -20,17 +20,17 @@ export const en: Dict = {
       'Lately my focus is AI-assisted testing: using LLMs and MCP-based agents to generate scenarios, heal flaky locators, and analyze failures — so the suite gets faster and people spend their time on the hard cases.',
     ],
     facts: [
-      { label: 'Experience', value: '~10 yrs engineering · 6+ yrs QA' },
+      { label: 'Experience', value: '~13 yrs engineering · 7+ yrs QA' },
       { label: 'Based', value: 'Ankara, Türkiye · Remote' },
-      { label: 'Focus', value: 'Playwright · TypeScript · CI/CD' },
-      { label: 'Languages', value: 'Turkish (native) · English (B2–C1)' },
+      { label: 'Focus', value: 'Playwright · TypeScript · CI/CD · Selenium ·Apache Jmeter ·Postman ·Graphana K6 ·AWS Microservices ·Confluence ·Jira ·Bitbucket ·VS Code ·LoadRunner ·RestAssured ·Cypress ·Katalon Studio' },
+      { label: 'Languages', value: 'Turkish (Native) · English (B2–C1) · German (A2–B1)' },
     ],
   },
 
   metrics: [
     { value: '40% → 85%', context: 'Test coverage I rebuilt from the ground up at CyanGate.' },
     { value: '−60%', context: 'Critical defects, caught earlier through automation.' },
-    { value: '500K', context: 'Concurrent users I load-tested with JMeter at Lotec.' },
+    { value: '500K', context: 'Concurrent users I load-tested with JMeter at Lotec for Certified project.' },
     { value: '~40%', context: 'Less time on repetitive scripting, with AI-assisted generation.' },
   ],
 
@@ -124,9 +124,12 @@ export const en: Dict = {
 
   education: [
     { title: 'B.Sc. — Biomedical Engineering', meta: 'Erciyes University, Kayseri · 2009–2013' },
+    { title: 'High School Diploma — Science', meta: 'Kayseri Rahmi Kula Anatolian High School · 2004–2008' },
+    
   ],
 
   certifications: [
+    { title: 'Look all certifications https://www.linkedin.com/in/ozgebuyuktorun1/details/certifications/', meta: 'LinkedIn' },
     { title: 'Node.js Backend Development Bootcamp', meta: 'Patika.dev / NewMind · 2025' },
     { title: 'Test Automation with Playwright', meta: 'Udemy · 2024' },
     { title: 'AWS Cloud Practitioner Essentials', meta: '2023' },
